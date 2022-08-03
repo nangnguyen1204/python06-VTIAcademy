@@ -90,13 +90,13 @@ CREATE TABLE IF NOT EXISTS groupAccount (
     joinDate			 DATE
 );
 
-
 insert into groupAccount (groupID,	accountID,	joinDate	) values 
 						( 	1,			1,		'2022-03-01'),
-						(	2,			2,		'2022-03-02'),
+						(	1,			2,		'2022-03-02'),
 						(	3,			3,		'2022-03-03'),
-						(	4,			4,		'2022-03-04'),
-						(	5,			5,		'2022-03-05');
+						(	4,			3,		'2022-03-04'),
+                        (	5,			3,		'2022-03-04'),
+						(	1,			5,		'2022-03-05');
 
 CREATE TABLE if not exists typeQuestion (
     typeId				 TINYINT PRIMARY KEY AUTO_INCREMENT,
@@ -163,11 +163,10 @@ CREATE TABLE IF NOT EXISTS exam (
     title 				VARCHAR(255),
     categoryID			TINYINT,
     duration 			TIME,
-    creatorID 			SMALLINT,
+    creatorID 			TINYINT,
     createDate 			DATE,
-    FOREIGN KEY (categoryID)
-        REFERENCES categoryQuestion (categoryID)
-        ON DELETE CASCADE
+    FOREIGN KEY (categoryID) 	REFERENCES categoryQuestion (categoryID)	ON DELETE CASCADE,
+	FOREIGN KEY (creatorID) 	REFERENCES `account` (accountID)	ON DELETE CASCADE
 );
 
 insert into 		exam(`code`,		title, 	categoryID,		duration,	creatorID,	createDate) values
@@ -182,7 +181,8 @@ CREATE TABLE IF NOT EXISTS examQuestion (
     questionID 			SMALLINT
 );
 
-insert into examQuestion(examID,questionID) values (1,1),(2,2),(3,3),(4,4),(5,5);
+
+insert into examQuestion(examID,questionID) values (1,1),(2,2),(3,3),(4,4),(5,5),(6,1),(7,1);
 
 							-- Bài tập Extra Assignment 1 --
         

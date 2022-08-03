@@ -71,12 +71,14 @@ GROUP BY department_number
 HAVING numbers_employee_on_department > 1;
 
 SELECT 
-    et.* , d.department_name
+    d.department_name,
+    count(et.employee_number) , GROUP_CONCAT(et.employee_name)
 FROM
     employee_table et
-        JOIN
+        RIGHT JOIN
     department d ON et.department_number = d.department_number
-ORDER BY d.department_number;
+GROUP BY d.department_number
+ORDER BY count(et.employee_number) DESC;
 
 SELECT 
     et.*, COUNT(est.skill_code) AS numbers_skill_of_employee
