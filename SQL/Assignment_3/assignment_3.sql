@@ -104,18 +104,18 @@ WHERE
 
 					-- extra--
                     
-insert into trainee (fullName, 			birthDay, 		gender, ET_IQ, ET_Gmath, ET_English,trainingClass, evaluationNotes ) values
-					('Cong Nang 01',	'2000-04-12', 'male', 	20,		20,			50,		'Python06',		'evaluationNotes01'			),
-					('Cong Nang 023',	'1999-05-12', 'female', 2,		2,			50,		'Python067',	'evaluationNotes01ad'		),
-					('Cong Nang 04',	'2005-03-12', 'male', 	10,		10,			25,		'Java',			'evaluationNotes01asdasd'	),
-					('Cong Nang 05',	'1950-02-12', 'female', 5,		5,			5,		'Java',			'a'							),
-					('Cong Nang 06',	'1960-01-12', 'male', 	10,		10,			10,		'Python06',		''							),
-					('Cong Nang 07',	'2003-01-12', 'female', 15,		15,			15,		'SQL',			'sa'						),
-					('Cong Nang 08',	'2000-02-12', 'male', 	5,		20,			30,		'SQL',			'evaluationNotes01'			),
-					('Lam 1',			'2000-03-12', 'female', 7,		7,			40,		'Python06',		'evaluationNotes01'			),
-					('duc',				'2000-02-12', 'female', 20,		2,			30,		'C#','fafa'									),
-					('viet 1',			'2000-02-12', 'male', 	15,		5,			50,		'Python06',		'aaaaaaaa'					),
-					('nguyen cong nang','2000-10-12', 'male', 	15,		2,			2,		'Python06',		'aaaaa'						);
+insert into trainee (fullName, 			birthDay, 		gender, ET_IQ, ET_Gmath, ET_English,trainingClass, evaluationNotes , 		VTI_Account ) values
+					('Cong Nang 01',	'2000-04-12', 'male', 	20,		20,			50,		'Python06',		'evaluationNotes01'			,1	),
+					('Cong Nang 023',	'1999-05-12', 'female', 2,		2,			50,		'Python067',	'evaluationNotes01ad'		,2	),
+					('Cong Nang 04',	'2005-03-12', 'male', 	10,		10,			25,		'Java',			'evaluationNotes01asdasd'	,3	),
+					('Cong Nang 05',	'1950-02-12', 'female', 5,		5,			5,		'Java',			'a'							,4),
+					('Cong Nang 06',	'1960-01-12', 'male', 	10,		10,			10,		'Python06',		''							,5),
+					('Cong Nang 07',	'2003-01-12', 'female', 15,		15,			15,		'SQL',			'sa'						,6),
+					('Cong Nang 08',	'2000-02-12', 'male', 	5,		20,			30,		'SQL',			'evaluationNotes01'			,7),
+					('Lam 1',			'2000-03-12', 'female', 7,		7,			40,		'Python06',		'evaluationNotes01'			,8),
+					('duc',				'2000-02-12', 'female', 20,		2,			30,		'C#','fafa'									,9),
+					('viet 1',			'2000-02-12', 'male', 	15,		5,			50,		'Python06',		'aaaaaaaa'					,10),
+					('nguyen cong nang','2000-10-12', 'male', 	15,		2,			2,		'Python06',		'aaaaa'						,11);
 
 
 

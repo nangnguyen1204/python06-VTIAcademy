@@ -45,6 +45,7 @@ CREATE TABLE IF NOT EXISTS `Account` (
     Email 					VARCHAR(255),
     UserName 				VARCHAR(255),
     FullName 				VARCHAR(255),
+    gender					ENUM('M','F','U'),
     DepartmentID 			TINYINT,
     PositionID 				TINYINT,
     CreateDate 				DATE,
