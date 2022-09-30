@@ -1,0 +1,19 @@
+{
+    "emp_details": [
+        {
+            "emp_name": "Nguyen Van A",
+            "email": "nguyenvana@gmail.com",
+            "year": 30
+        },
+        {
+            "emp_name": "Nguyen Van B",
+            "email": "nguyenvanb@gmail.com",
+            "year": 32
+        },
+        {
+            "emp_name": "Nguyen Van C",
+            "email": "nguyenvanc@gmail.com",
+            "year": 23
+        }
+    ]
+}
